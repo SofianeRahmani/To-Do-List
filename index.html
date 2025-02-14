@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="app.css">
+    <script type="module" src="main.js"></script>
+    <script src="./node_modules/axios/dist/axios.min.js"></script>
+    <script type="module" src="api.js"></script>
+    <script type="module" src="Task.js"></script>
+    <title>To-Do List</title>
+</head>
+<body>
+    <header>
+        <div>To-Do List</div>
+    </header>
+    <div class="container">
+        <div class="button-container">
+            <button class="button button-add">Add a Task</button>
+            <button class="button button-get">Get Tasks</button>
+            <button class="button button-modify">Modify a Task</button>
+            <button class="button button-delete">Delete Task</button>
+        </div>
+        <div class="task-input-container" style="display: none;">
+            <input type="text" id="taskTitle" placeholder="Enter task title">
+            <button class="button button-submit">Submit</button>
+        </div>
+        <div class="task-list-container" style="display: none;">
+            <h2>Task List</h2>
+            <ul class="task-list"></ul>
+        </div>
+        <div class="task-list-update-container" style="display: none;">
+            <h3>Modify Task</h3>
+        </div>
+        <div class="task-list-container-delete" style="display: none;">
+            <h2>Task List</h2>
+            <ul class="task-list"></ul>
+        </div>
+    </div>
+</body>
+</html>
